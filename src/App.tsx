@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { MarketTicker } from './components/MarketTicker';
 import { Hero } from './components/Hero';
+import { WebinarSection } from './components/WebinarSection';
 import { MentorSection } from './components/MentorSection';
 import { OfficeGallery } from './components/OfficeGallery';
 import { Curriculum } from './components/Curriculum';
@@ -40,6 +41,9 @@ export default function App() {
       <main className="flex-1">
         {/* Hero Section */}
         <Hero onOpenDemo={handleOpenDemo} />
+
+        {/* Featured Masterclasses: Motilal Oswal & Upsurge.club Webinars */}
+        <WebinarSection onOpenDemo={handleOpenDemo} />
 
         {/* Meet The Mentor: Trader Punit Narang */}
         <MentorSection onOpenDemo={handleOpenDemo} />

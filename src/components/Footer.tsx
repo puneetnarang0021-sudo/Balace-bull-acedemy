@@ -60,6 +60,12 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDemo }) => {
             </h4>
             <ul className="space-y-2">
               <li>
+                <a href="#webinars" className="text-amber-400 hover:text-amber-300 font-semibold transition-colors flex items-center gap-1.5">
+                  <span>Featured Webinars</span>
+                  <span className="text-[10px] px-1.5 py-0.2 rounded bg-amber-400/20 text-amber-300">Live</span>
+                </a>
+              </li>
+              <li>
                 <a href="#curriculum" className="hover:text-amber-400 transition-colors">
                   Course Syllabus &amp; Modules
                 </a>

@@ -156,8 +156,33 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
           </div>
         </div>
 
+        {/* Featured Masterclasses Banner with Motilal Oswal & Upsurge */}
+        <div className="mt-12 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-amber-500/10 via-neutral-900/90 to-emerald-500/10 border border-amber-500/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3.5 text-center sm:text-left">
+            <div className="w-10 h-10 rounded-xl bg-amber-400/20 border border-amber-500/30 flex items-center justify-center shrink-0 text-amber-400">
+              <Star className="w-5 h-5 fill-amber-400" />
+            </div>
+            <div>
+              <p className="text-xs font-bold text-amber-400 uppercase tracking-wider">
+                Industry Recognition &amp; Masterclasses
+              </p>
+              <p className="text-sm font-semibold text-white">
+                Live Option Webinars with <span className="text-amber-300">Motilal Oswal</span> &amp; <span className="text-emerald-400">Upsurge.club</span>
+              </p>
+            </div>
+          </div>
+
+          <a
+            href="#webinars"
+            className="shrink-0 px-4 py-2 rounded-xl text-xs font-bold text-neutral-950 bg-amber-400 hover:bg-amber-300 transition-colors shadow-md flex items-center gap-1.5 whitespace-nowrap"
+          >
+            <span>Watch Live Masterclasses</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </a>
+        </div>
+
         {/* 4-Metric Proof Strip (Full-width row below hero split) */}
-        <div className="mt-14 pt-8 border-t border-neutral-800/80 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div className="mt-8 pt-8 border-t border-neutral-800/80 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div className="p-3">
             <p className="font-mono text-2xl sm:text-3xl font-extrabold text-amber-400 tabular-nums">
               5,000+

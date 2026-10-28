@@ -72,7 +72,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDemo }) => {
         </a>
 
         {/* Zone 2: 4-5 clean single-line nav links */}
-        <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-neutral-300">
+        <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-neutral-300">
+          <a
+            href="#webinars"
+            className="text-amber-400 hover:text-amber-300 font-semibold transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5"
+          >
+            <span>Webinars</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+          </a>
           <a
             href="#curriculum"
             className="hover:text-amber-400 transition-colors whitespace-nowrap shrink-0"
@@ -138,11 +145,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDemo }) => {
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-neutral-800 bg-neutral-950 px-5 py-4 space-y-3">
           <a
+            href="#webinars"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block text-sm font-bold text-amber-400 hover:text-amber-300 py-1 flex items-center justify-between"
+          >
+            <span>Featured Webinars (Motilal Oswal &amp; Upsurge)</span>
+            <span className="text-[10px] px-2 py-0.5 rounded bg-amber-400/20 text-amber-300 uppercase">Live</span>
+          </a>
+          <a
             href="#curriculum"
             onClick={() => setMobileMenuOpen(false)}
             className="block text-sm font-medium text-neutral-200 hover:text-amber-400 py-1"
           >
-            Curriculum & Modules
+            Curriculum &amp; Modules
           </a>
           <a
             href="#mentor"
